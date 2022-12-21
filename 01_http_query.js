@@ -11,7 +11,7 @@ let http = require("http");
 // url module used to read the query parameters
 let url = require("url");
 
-//create http server using createServer()
+//create http server using createServer() 
 
 let server = http.createServer((req,res)=>{
 // set the MIME Type 
