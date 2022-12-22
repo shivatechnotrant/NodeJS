@@ -1,1 +1,6 @@
-Hello
+
+ creating 'n' number of modules technically we can call routing in NODe JS
+Ex. Transaction module, Credit card module,...... these all in included at one place (In express JS this is called Routing concept)
+
+
+TO make express work in typescript download "yarn add express @types/express"
