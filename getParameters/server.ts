@@ -26,7 +26,7 @@ import * as express from "express";
 // get request
 app.get("/login",[auth],(req:any,res:any)=>{  //check without [auth] meaning without token
   // query param 
-  if(res.query.uname == "admin" && res.query.upwd =="admin"){
+  if(req.query.uname == "admin" && req.query.upwd =="admin"){
       res.status(201).json({json:"success"});
   } {
     res.status(401).json({json:"fail"});

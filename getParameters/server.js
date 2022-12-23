@@ -18,9 +18,9 @@ var auth = function (req, res, next) {
 // this above authorization we need to link with below authentication using[auth] in url pattern arg
 // Authentication
 // get request
-app.get("/login", [auth], function (req, res) {
+app.get("/login", function (req, res) {
     // query param 
-    if (res.query.uname == "admin" && res.query.upwd == "admin") {
+    if (req.query.uname == "admin" && req.query.upwd == "admin") {
         res.status(201).json({ json: "success" });
     }
     {
@@ -29,7 +29,8 @@ app.get("/login", [auth], function (req, res) {
 });
 // default request 
 app.get("/", function (req, res) {
-    res.sendFile("C:/Users/shiva/OneDrive/Desktop/NodeJS/NodeJS/getParameters/index.html"); //path of index.html ==> C:\Users\shiva\OneDrive\Desktop\NodeJS\NodeJS\getParameters\index.html
+    res.sendFile("C:/Users/shiva/OneDrive/Desktop/NodeJS/NodeJS/getParameters/index.html");
+    //path of index.html ==> C:\Users\shiva\OneDrive\Desktop\NodeJS\NodeJS\getParameters\index.html (predefined method for html OLD Approach)
 });
 app.listen(8080, function () {
     console.log("server started successfully");
