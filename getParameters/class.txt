@@ -1,0 +1,3 @@
+http://localhost:8080/login?uname="admin"&upwd="admin"
+
+
