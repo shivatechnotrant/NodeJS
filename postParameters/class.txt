@@ -1,0 +1,4 @@
+yarn add express @types/express body-parser @types/body-parser --save
+
+express @types/express for Rest Services
+body-parser for reading post parameters
