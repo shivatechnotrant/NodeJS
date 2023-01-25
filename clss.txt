@@ -4,3 +4,104 @@ Ex. Transaction module, Credit card module,...... these all in included at one p
 
 
 TO make express work in typescript download "yarn add express @types/express"
+
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@  MongoDB  @@@@@@@@@@@@@@@@@@@@@@@@@
+
+ - MongoDB is NoSQL Database.
+ - MongoDB supports the JSON
+ - MongoDB is the light weight Database
+ - MongoDB Database follow the "mongodb" protocol
+ - mongodb bydefault running on port 27017
+
+
+ Terminology:
+
+      SQL                                                      NoSQL
+
+ Oracle, MySQL, SQL server                                  MongoDB, cassandra
+ tables                                                     collection
+ records                                                    documents
+ column                                                     field
+
+
+libraries:
+----------
+
+1) mongodb
+ 
+ this library helps to connect to mongodb database without schema(dont follow rules and regulations)
+
+ "employees" (table)
+
+ employees.insert({"eid":1,"ename":"eone","esal":10000});
+ employees.insert({pid:1,pname:"laptop",pcost:20000}); //mongodb library is that it allows this as well
+
+
+2) mongoose (overcomes above issue)
+
+this library helps to connect to mongodb database with schema
+
+
+MongoDB provides the cloud environment in the form of MongoDB Atlas
+URL: https://www.mongodb.com/cloud/atlas
+
+Details of the database
+------------------------
+
+
+database name : shiva_nodejs
+collection name: products
+
+
+username : admin
+password: admin
+ //mongodb+srv://admin:<password>@cluster0.ktgd1vw.mongodb.net/?retryWrites=true&w=majority
+collection url: mongodb+srv://admin:admin@cluster0.ktgd1vw.mongodb.net/?retryWrites=true&w=majority
+
+
+
+MongoDB CRUD Operations by using "mongodb" library
+
+1)  create the directory (folder)
+
+Ex: MongoDB_CRUD
+
+2) download the libraries using "npm"/yarn
+
+==>  mongodb @type/mongodb   used to connect to mongodb database
+
+to develop rest services
+
+=> express @types/express   used to develop rest api's
+
+=> cors @types/cors   
+
+nodejs portno 8080
+angular 4200
+react 3000 
+
+providing the communinication b/w different different ports using cors
+
+=> body-parser  @types/body-parser   Node is the server side technology so to recieve the data from the client we use bodyparser
+
+
+yarn add mongodb @types/mongodb express @types/express cors @types/cors body-parser @types/bosy-parser --save
+
+
+MongoDB_CRUD
+          fetch (module)
+               fetch.ts 
+          insert
+               insert.ts
+          update
+               update.ts
+          delete
+               delete.ts
+          to collaborate all this we need server field
+          server.ts
+          
+
+
