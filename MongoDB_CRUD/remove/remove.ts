@@ -10,7 +10,7 @@ let remove:any = express.Router().delete("/",(req:any,res:any):any=>{
         else{
            let db:any =  connection.db("shiva_nodejs") //database reference
         //    we need to delete record based on id
-        db.collection(" ").deleteOne({"id":req.body.id},(err,array)=>{
+        db.collection("products").deleteOne({"id":req.body.id},(err,array)=>{
                 if(err) throw err;
                 else{
                     res.status(200).json({message:`${req.body.id}record deleted successfully!!!!`})
