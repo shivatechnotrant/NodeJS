@@ -1,0 +1,1 @@
+yarn add express @types/express mongoose @types/mongoose body-parser @types/body-parser cors @types/cors
